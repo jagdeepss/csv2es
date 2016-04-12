@@ -133,11 +133,7 @@ def sanitize_delimiter(delimiter, is_tab):
         return None
     else:
         d = str(delimiter)
-        if len(d) == 1:
-            return d
-        else:
-            raise Exception('Delimiter cannot be more than 1 character.')
-
+		return d
 
 @click.command()
 @click.option('--index-name', required=True,
