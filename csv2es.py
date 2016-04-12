@@ -133,7 +133,7 @@ def sanitize_delimiter(delimiter, is_tab):
         return None
     else:
         d = str(delimiter)
-		return d
+        return d
 
 @click.command()
 @click.option('--index-name', required=True,
